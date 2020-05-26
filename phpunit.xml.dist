@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="I12 Test Suite">
+        <testsuite name="I12l Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

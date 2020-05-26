@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpGuus\I12\Models;
+namespace PhpGuus\I12l\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

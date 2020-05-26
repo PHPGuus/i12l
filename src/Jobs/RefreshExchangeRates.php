@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpGuus\I12\Jobs;
+namespace PhpGuus\I12l\Jobs;
 
 use GuzzleHttp\Client;
 use Illuminate\Bus\Queueable;
@@ -9,8 +9,8 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
-use PhpGuus\I12\Facades\I12;
-use PhpGuus\I12\Models\ExchangeRate;
+use PhpGuus\I12l\Facades\I12l;
+use PhpGuus\I12l\Models\ExchangeRate;
 
 class RefreshExchangeRates implements ShouldQueue
 {
@@ -68,7 +68,7 @@ class RefreshExchangeRates implements ShouldQueue
 	protected function getProviderQueryString(): string
 	{
 		return 'app_id=' .
-			config('services.' . config('i12.exchange_rate_provider'))['app_id'];
+			config('services.' . config('I12l.exchange_rate_provider'))['app_id'];
 	}
 
 	/**
@@ -83,7 +83,7 @@ class RefreshExchangeRates implements ShouldQueue
 
 	protected function storeInDatabase($json)
 	{
-		$baseCurrency = I12::getCurrencyByAlpha3Code($json->base);
+		$baseCurrency = I12l::getCurrencyByAlpha3Code($json->base);
 		if(!$baseCurrency) {
 			return;
 		}
@@ -91,7 +91,7 @@ class RefreshExchangeRates implements ShouldQueue
 		foreach($json->rates as $currencyAlpha3 => $rate) {
 			Log::debug('Target currency: "' . $currencyAlpha3 . '"');
 			Log::debug('Exchange rate (from 1 USD): ' . $rate);
-			$targetCurrency = I12::getCurrencyByAlpha3Code($currencyAlpha3);
+			$targetCurrency = I12l::getCurrencyByAlpha3Code($currencyAlpha3);
 			if($targetCurrency) {
 				$exchangeRate = ExchangeRate::firstOrCreate([
 					'base_currency_id' => $baseCurrency->id,

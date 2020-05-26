@@ -15,7 +15,7 @@ class CreateCountriesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create(config('i12.table_prefix', '') . 'countries', function(Blueprint $table) {
+		Schema::create(config('i12l.table_prefix', '') . 'countries', function(Blueprint $table) {
 			$table->bigIncrements('id');
 			$table->char('alpha2', '2')->unique();
 			$table->char('alpha3', '3')->unique();
@@ -33,7 +33,7 @@ class CreateCountriesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists(config('i12.table_prefix', '') . 'countries');
+		Schema::dropIfExists(config('i12l.table_prefix', '') . 'countries');
 	}
 
 	//endregion

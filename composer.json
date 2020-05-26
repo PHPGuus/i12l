@@ -1,5 +1,5 @@
 {
-    "name": "phpguus/i12",
+    "name": "phpguus/i12l",
     "description": "Laravel package encapsulating international standards ISO3166, ISO4217, ITU.E164. Also provides a service to download currency exchange rates. Stores all information in database tables.",
     "type": "library",
     "license": "GPLv3",
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.1.3|^7.2|^7.2.5",
+        "php": "^7.1.3|^7.2|^7.2.5|^7.3|^7.4",
         "guzzlehttp/guzzle": "^6.5"
     },
     "require-dev": {
@@ -19,21 +19,21 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpGuus\\I12\\": "src"
+            "PhpGuus\\I12l\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PhpGuus\\I12\\Tests\\": "tests"
+            "PhpGuus\\I12l\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PhpGuus\\I12\\ServiceProvider"
+                "PhpGuus\\I12l\\ServiceProvider"
             ],
             "aliases": {
-                "I12": "PhpGuus\\I12\\Facades\\I12"
+                "I12": "PhpGuus\\I12l\\Facades\\I12l"
             }
         }
     }

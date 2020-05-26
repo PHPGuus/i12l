@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpGuus\I12\Console\Commands;
+namespace PhpGuus\I12l\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
-use PhpGuus\I12\Seeds\CallingCodesTableSeeder;
-use PhpGuus\I12\Seeds\CountriesTableSeeder;
-use PhpGuus\I12\Seeds\CurrenciesTableSeeder;
+use PhpGuus\I12l\Seeds\CallingCodesTableSeeder;
+use PhpGuus\I12l\Seeds\CountriesTableSeeder;
+use PhpGuus\I12l\Seeds\CurrenciesTableSeeder;
 
 class SeedDatabaseTables extends Command
 {
@@ -40,7 +40,7 @@ class SeedDatabaseTables extends Command
 	/**
 	 * @inheritDoc
 	 */
-	protected $signature = 'i12:seed-tables';
+	protected $signature = 'i12l:seed-tables';
 
 	//endregion
 }

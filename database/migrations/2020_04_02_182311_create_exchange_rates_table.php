@@ -15,7 +15,7 @@ class CreateExchangeRatesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create(config('i12.table_prefix', '') . 'exchange_rates', function(Blueprint $table) {
+		Schema::create(config('i12l.table_prefix', '') . 'exchange_rates', function(Blueprint $table) {
 			$table->bigIncrements('id');
 			$table->unsignedBigInteger('base_currency_id');
 			$table->unsignedBigInteger('target_currency_id');
@@ -33,7 +33,7 @@ class CreateExchangeRatesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists(config('i12.table_prefix', '') . 'exchange_rates');
+		Schema::dropIfExists(config('i12l.table_prefix', '') . 'exchange_rates');
 	}
 
 	//endregion

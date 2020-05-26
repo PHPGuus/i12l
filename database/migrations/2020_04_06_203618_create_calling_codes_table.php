@@ -15,7 +15,7 @@ class CreateCallingCodesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create(config('i12.table_prefix', '') . 'calling_codes', function(Blueprint $table) {
+		Schema::create(config('i12l.table_prefix', '') . 'calling_codes', function(Blueprint $table) {
 			$table->bigIncrements('id');
 			$table->unsignedBigInteger('country_id');
 			$table->string('calling_code');
@@ -31,7 +31,7 @@ class CreateCallingCodesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists(config('i12.table_prefix', '') . 'calling_codes');
+		Schema::dropIfExists(config('i12l.table_prefix', '') . 'calling_codes');
 	}
 
 	//endregion

@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpGuus\I12\Facades;
+namespace PhpGuus\I12l\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class I12 extends Facade
+class I12l extends Facade
 {
 	/**
 	 * Get the registered name of the component.
@@ -15,6 +15,6 @@ class I12 extends Facade
 	 */
 	protected static function getFacadeAccessor()
 	{
-		return 'i12';
+		return 'i12l';
 	}
 }

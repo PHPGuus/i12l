@@ -76,8 +76,8 @@ class ComposerStaticInit10b4f6c0c0210945260c43c70c4e7dcf
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
             'PhpOption\\' => 10,
-            'PhpGuus\\I12\\Tests\\' => 18,
-            'PhpGuus\\I12\\' => 12,
+            'PhpGuus\\I12l\\Tests\\' => 19,
+            'PhpGuus\\I12l\\' => 13,
         ),
         'O' => 
         array (
@@ -115,8 +115,8 @@ class ComposerStaticInit10b4f6c0c0210945260c43c70c4e7dcf
         array (
             'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Inflector\\' => 19,
             'Doctrine\\Common\\Lexer\\' => 22,
-            'Doctrine\\Common\\Inflector\\' => 26,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -257,11 +257,11 @@ class ComposerStaticInit10b4f6c0c0210945260c43c70c4e7dcf
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
-        'PhpGuus\\I12\\Tests\\' => 
+        'PhpGuus\\I12l\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
         ),
-        'PhpGuus\\I12\\' => 
+        'PhpGuus\\I12l\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -317,13 +317,13 @@ class ComposerStaticInit10b4f6c0c0210945260c43c70c4e7dcf
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
-        ),
-        'Doctrine\\Common\\Inflector\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
         'DeepCopy\\' => 
         array (

@@ -15,7 +15,7 @@ class CreateCurrenciesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create(config('i12.table_prefix', '') . 'currencies', function(Blueprint $table) {
+		Schema::create(config('i12l.table_prefix', '') . 'currencies', function(Blueprint $table) {
 			$table->bigIncrements('id');
 			$table->char('alpha3', '3')->unique();
 			$table->unsignedInteger('minor_units');
@@ -34,7 +34,7 @@ class CreateCurrenciesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists(config('i12.table_prefix', '') . 'currencies');
+		Schema::dropIfExists(config('i12l.table_prefix', '') . 'currencies');
 	}
 
 	//endregion

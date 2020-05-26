@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpGuus\I12\Factories;
+namespace PhpGuus\I12l\Factories;
 
-use PhpGuus\I12\Models\Country;
-use PhpGuus\I12\Models\Currency;
-use PhpGuus\I12\Models\ExchangeRate;
+use PhpGuus\I12l\Models\Country;
+use PhpGuus\I12l\Models\Currency;
+use PhpGuus\I12l\Models\ExchangeRate;
 
-class I12Factory
+class I12lFactory
 {
 	//region Public Status Report
 

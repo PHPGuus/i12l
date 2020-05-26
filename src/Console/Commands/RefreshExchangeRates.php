@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpGuus\I12\Console\Commands;
+namespace PhpGuus\I12l\Console\Commands;
 
 use Illuminate\Console\Command;
-use PhpGuus\I12\Jobs\RefreshExchangeRates as RefreshExchangeRatesJob;
+use PhpGuus\I12l\Jobs\RefreshExchangeRates as RefreshExchangeRatesJob;
 
 class RefreshExchangeRates extends Command
 {
@@ -30,7 +30,7 @@ class RefreshExchangeRates extends Command
 	/**
 	 * @inheritDoc
 	 */
-	protected $signature = 'i12:refresh-exchange-rates';
+	protected $signature = 'i12l:refresh-exchange-rates';
 
 	//endregion
 }

@@ -15,7 +15,7 @@ class CreateCountryCurrencyTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create(config('i12.table_prefix', '') . 'country_currency', function(Blueprint $table) {
+		Schema::create(config('i12l.table_prefix', '') . 'country_currency', function(Blueprint $table) {
 			$table->bigIncrements('id');
 			$table->unsignedBigInteger('country_id');
 			$table->unsignedBigInteger('currency_id');
@@ -29,7 +29,7 @@ class CreateCountryCurrencyTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists(config('i12.table_prefix', '') . 'country_currency');
+		Schema::dropIfExists(config('i12l.table_prefix', '') . 'country_currency');
 	}
 
 	//endregion

@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpGuus\I12\Seeds;
+namespace PhpGuus\I12l\Seeds;
 
 use Illuminate\Database\Seeder;
-use PhpGuus\I12\Models\Country;
+use PhpGuus\I12l\Models\Country;
 
 class CountriesTableSeeder extends Seeder
 {
