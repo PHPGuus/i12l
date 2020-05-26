@@ -33,7 +33,7 @@
                 "PhpGuus\\I12l\\ServiceProvider"
             ],
             "aliases": {
-                "I12": "PhpGuus\\I12l\\Facades\\I12l"
+                "I12l": "PhpGuus\\I12l\\Facades\\I12l"
             }
         }
     }
