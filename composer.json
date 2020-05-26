@@ -2,7 +2,7 @@
     "name": "phpguus/i12l",
     "description": "Laravel package encapsulating international standards ISO3166, ISO4217, ITU.E164. Also provides a service to download currency exchange rates. Stores all information in database tables.",
     "type": "library",
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "PHP Guus",
